@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/*
+ * Entropy AI Operations — Global Styles
+ *
+ * This file is the Tailwind CSS v4 entry point.
+ * Define CSS custom properties (design tokens) here.
+ * All Tailwind utilities are available globally via `@import "tailwindcss"` above.
+ *
+ * Add component-level or utility-level styles only when Tailwind utilities
+ * are genuinely insufficient. Prefer Tailwind classes in JSX.
+ */
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --muted-foreground: #6b7280;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #fafafa;
+    --muted-foreground: #9ca3af;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
